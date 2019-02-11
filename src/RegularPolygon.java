@@ -12,17 +12,22 @@ public class RegularPolygon extends Polygon {
 
     /**
      * Creates a regular polygon.
-     * @param numberOfSides the number of sides.
+     * @param numberOfSides the number of sides of the polygon.
      * @param lengthOfSides the length of those sides.
      * @param apothem the apothem.
      */
     public RegularPolygon(int numberOfSides,double lengthOfSides,
                           double apothem){
-        super(numberOfSides);
+        super();
+        this.numberOfSides = numberOfSides;
         this.lengthOfSides = lengthOfSides;
         this.apothem = apothem;
     }
 
+    @Override
+    public void draw(){
+        System.out.println("Drawing polygon");
+    }
     /**
      * Returns the perimeter of the polygon.
      * @return the perimeter of the polygon
@@ -39,7 +44,7 @@ public class RegularPolygon extends Polygon {
      */
     @Override
     public double getArea(){
-       double regularArea = 0.5 * apothem * super.getPerimeter();
+       double regularArea = 0.5 * apothem;
        return regularArea;
     }
 

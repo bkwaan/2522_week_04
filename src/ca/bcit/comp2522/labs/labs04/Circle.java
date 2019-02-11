@@ -22,7 +22,7 @@ public class Circle extends Shape2D {
      * Draws the circle.
      */
     @Override
-    void draw(){
+    public void draw(){
         System.out.println("You are drawing the circle");
     }
 
@@ -31,7 +31,7 @@ public class Circle extends Shape2D {
      * @return area of the circle as a double.
      */
     @Override
-    double getArea(){
+    public double getArea(){
         double area = PI*radius;
         Math.pow(area,2);
         return area;
@@ -42,7 +42,7 @@ public class Circle extends Shape2D {
      * @return perimeter of circle as a double.
      */
     @Override
-    double getPerimeter(){
+    public double getPerimeter(){
         return 2*PI*radius;
     }
 }

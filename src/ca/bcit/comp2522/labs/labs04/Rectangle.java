@@ -1,7 +1,7 @@
 package ca.bcit.comp2522.labs.labs04;
 
 /**
- * Rectangle class.
+ * Rectangle.
  * @author Bosco Kwan
  * @version 2019
  */
@@ -28,7 +28,7 @@ public class Rectangle extends Shape2D {
      * Draws the shape rectangle.
      */
     @Override
-    void draw(){
+    public void draw(){
         System.out.println("You are drawing the rectangle");
     }
 
@@ -37,7 +37,7 @@ public class Rectangle extends Shape2D {
      * @return area of rectangle as a double
      */
     @Override
-    double getArea(){
+    public double getArea(){
         double area = width*height;
         return area;
     }
@@ -47,7 +47,7 @@ public class Rectangle extends Shape2D {
      * @return perimeter of rectangle as a double
      */
     @Override
-    double getPerimeter(){
+    public double getPerimeter(){
         double perimeter = 2*width + 2*height;
         return perimeter;
     }

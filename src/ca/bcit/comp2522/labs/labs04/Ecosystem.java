@@ -13,5 +13,6 @@ public class Ecosystem {
         newEater.eat();
         newEater = new Human();
         newEater.eat();
+        ((Human) newEater).walk();
     }
 }
